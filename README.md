@@ -1,7 +1,11 @@
-# greendog-rails-template
+# hobo-rails-template
+
+This template was forked from greendog-rails-template on github.  It was modifed to use Hobo
 
 This is a [Rails Template](http://m.onkey.org/rails-templates) to facilitate the
 quick set-up of new Rails applications.
+
+
 
 ## Overview
 
@@ -24,25 +28,27 @@ quick set-up of new Rails applications.
 
 ## Changes
 
+* 2011-06-27: Inegrated Hobo
 * 2011-04-10: Switched to manually-integrated blueprint and compass, instead of via existing gems.  Changed default style to be simpler, and to use Solarized for the color palette.
 
 ## Prerequisites
 
 * [Rails](http://rubyonrails.org/) 3.0 or newer
 * [RVM](http://rvm.beginrescueend.com/) with at least one Ruby installed
+* [Hobo](http://hobocentral.net/) 1.3.0 or newer
 
 ## Usage
 
 Get a copy of the template:
 
-`git clone git://github.com/greendog99/greendog-rails-template.git /tmp/greendog-rails-template`
+`git clone git://github.com/bsleys/hobo-rails-template.git /tmp/hobo-rails-template`
 
 Create a new Rails application as normal, specifying the path to the template script with the **-m** flag:
 
-`rails new appname -d mysql -m /tmp/greendog-rails-template/template.rb`
+`rails new appname -d mysql -m /tmp/hobo-rails-template/template.rb`
 
 Create your database, run your migration, and start the rails server with `rails s`.Browse
-to `http://localhost:3000/demos/text` and `http://localhost:3000/demos/grid` to see sample pages.
+to `http://localhost:3000/demos a sample page.
 
 ## Documentation
 
@@ -61,6 +67,7 @@ See the [documentation](documentation.html) page for a summary of how to use eac
 
 Thanks to others whose work has steered me in the right direction:
 
+* <https://github.com/greendog99/greendog-rails-template>
 * <https://github.com/shawn/shawns-rails3-template/>
 * <https://github.com/sporkd/compass-html5-boilerplate>
 * <http://html5boilerplate.com/>

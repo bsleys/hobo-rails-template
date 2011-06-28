@@ -15,7 +15,9 @@ remove_file 'app/stylesheets/ie.sass'
   copy_static_file "app/stylesheets/#{component}.sass"
 end
 
-git :add => '.'
-git :commit => "-aqm 'Initialized Compass.'"
+if File.directory?('.git') then
+  git :add => '.'
+  git :commit => "-aqm 'Initialized Compass.'"
+end
 
 puts "\n"

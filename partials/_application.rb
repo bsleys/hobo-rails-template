@@ -27,7 +27,9 @@ inject_into_file 'config/application.rb', :before => "  end\nend" do
   RUBY
 end
 
-git :add => '.'
-git :commit => "-aqm 'autoload app/extras, set default TZ, log file rotation, and filter for password_confirmation'"
+if File.directory?('.git') then
+  git :add => '.'
+  git :commit => "-aqm 'autoload app/extras, set default TZ, log file rotation, and filter for password_confirmation'"
+end
 
 puts "\n"

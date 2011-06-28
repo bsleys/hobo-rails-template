@@ -26,5 +26,7 @@ file 'config/app_config.yml', <<-RUBY.gsub(/^ {2}/, '')
   #   - [key2, val2]
 RUBY
 
-git :add => '.'
-git :commit => "-aqm 'Added app_config components.'"
+if File.directory?('.git') then
+  git :add => '.'
+  git :commit => "-aqm 'Added app_config components.'"
+end

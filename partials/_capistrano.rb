@@ -6,7 +6,9 @@ capify!
 
 # Update deploy.rb !!
 
-git :add => '.'
-git :commit => "-aqm 'Configured Capistrano.'"
+if File.directory?('.git') then
+  git :add => '.'
+  git :commit => "-aqm 'Configured Capistrano.'"
+end
 
 puts "\n"

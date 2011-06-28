@@ -22,6 +22,8 @@ inside "public/javascripts" do
   remove_file "rails.js"
 end
 
-git :commit => "-aqm 'Removed unnecessary files left over from initial app generation.'"
+if File.directory?('.git') then
+  git :commit => "-aqm 'Removed unnecessary files left over from initial app generation.'"
+end
 
 puts "\n"

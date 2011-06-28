@@ -8,7 +8,9 @@ puts "Creating default stylesheets ...".magenta
   append_file      "app/stylesheets/screen.sass", "@import partials/#{component}\n"
 end
 
-git :add => '.'
-git :commit => "-aqm 'Added stylesheets.'"
+if File.directory?('.git') then
+  git :add => '.'
+  git :commit => "-aqm 'Added stylesheets.'"
+end
 
 puts "\n"
