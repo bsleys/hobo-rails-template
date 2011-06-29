@@ -9,7 +9,7 @@ copy_static_file 'config/initializers/sass_config.rb'
 copy_static_file 'config/initializers/99_paperclip_hash_patch.rb'
 
 # Get the latest version of the Jquery version of rails.js
-download_file "https://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javascripts/rails.js"
+#download_file "https://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javascripts/rails.js"
 
 if File.directory?('.git') then
   git :add => '.'
@@ -17,3 +17,4 @@ if File.directory?('.git') then
 end
 
 puts "\n"
+

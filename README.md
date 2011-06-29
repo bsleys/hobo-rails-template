@@ -9,7 +9,6 @@ quick set-up of new Rails applications.
 
 * Run Hobo wizard to setup Hobo
 * Incorporates Paul Irish's [HTML5 Boilerplate](http://html5boilerplate.com/) v1.0 for template, reset, css, etc.
-* Removes everything to do with Prototype, and instead includes [JQuery](http://jquery.com/).
 * Templates, stylesheets, and views use [haml](http://haml-lang.com/) and [sass](http://sass-lang.com/) by default.
 * [Compass](http://compass-style.org/) for managing CSS mixins and frameworks.
 * Adds a simple 12-column grid framework from <http://www.1kbgrid.com/> (converted to sass).
@@ -69,3 +68,4 @@ Thanks to others whose work has steered me in the right direction:
 * <https://github.com/shawn/shawns-rails3-template/>
 * <https://github.com/sporkd/compass-html5-boilerplate>
 * <http://html5boilerplate.com/>
+
