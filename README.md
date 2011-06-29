@@ -8,6 +8,7 @@ quick set-up of new Rails applications.
 ## Overview
 
 * Run Hobo wizard to setup Hobo
+* Incorporates hobo_jquery and paperclip_with_hobo
 * Incorporates Paul Irish's [HTML5 Boilerplate](http://html5boilerplate.com/) v1.0 for template, reset, css, etc.
 * Templates, stylesheets, and views use [haml](http://haml-lang.com/) and [sass](http://sass-lang.com/) by default.
 * [Compass](http://compass-style.org/) for managing CSS mixins and frameworks.
@@ -26,6 +27,7 @@ quick set-up of new Rails applications.
 
 ## Changes
 
+* 2011-06-29: Removed full conversion to jquery due to Hobo requiring prototype.  Added hobo_jquery and paperclip_with_hobo.
 * 2011-06-27: Integrated Hobo
 * 2011-04-10: Switched to manually-integrated blueprint and compass, instead of via existing gems.  Changed default style to be simpler, and to use Solarized for the color palette.
 
